@@ -1,5 +1,3 @@
-import { iconImgs } from './iconsList';
-
 interface IIcon {
   name: string;
   className: string;
@@ -8,7 +6,7 @@ interface IIcon {
 const Icon = ({ name, className }: IIcon) => {
   return (
     <div className={className}>
-      <img src={iconImgs[name]} />
+      <img src={`/assets/icons/${name}.png`} />
     </div>
   );
 };
