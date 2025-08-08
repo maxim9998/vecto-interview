@@ -14,7 +14,7 @@ const Home = () => {
       {currentMovie.VideoUrl && (
         <video className="absolute top-0 left-0 w-full h-full object-cover z-4" src={currentMovie.VideoUrl} autoPlay loop muted playsInline />
       )}
-      <div className="ml-35 h-full w-[calc(100%-140px)] flex flex-col items-start justify-between z-10">
+      <div className="md:ml-35 ml-4 h-full w-full md:w-[calc(100%-140px)] flex flex-col items-start justify-between z-10">
         <FeaturedMovieDescription />
         <MovieCarousel />
       </div>

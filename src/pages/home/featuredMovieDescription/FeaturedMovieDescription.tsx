@@ -13,10 +13,10 @@ const FeaturedMovieDescription = () => {
   const mpaRating = currentMovie.MpaRating;
 
   return (
-    <div className="flex flex-col items-start justify-center gap-5 w-full h-2/3">
+    <div className="flex flex-col items-start justify-center gap-5 w-full h-2/3 overflow-y-scroll md:overflow-y-hidden">
       <div className="flex flex-col items-start justify-start gap-2">
         <p className="text-grey-text text-xl">{category}</p>
-        <img src={`/assets/movies/${currentMovie.TitleImage}`} />
+        <img src={`/assets/movies/${currentMovie.TitleImage}`} className="max-w-90" />
       </div>
       <div className="flex items-center justify-start gap-4 text-xl text-snow">
         <span>{year}</span>
