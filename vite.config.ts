@@ -12,6 +12,22 @@ export default defineConfig({
     open: true,
     port: 7000,
   },
+  build: {
+    target: 'esnext',
+    sourcemap: false,
+    minify: 'esbuild',
+    outDir: 'dist',
+    chunkSizeWarningLimit: 400,
+
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          lodash: ['lodash'],
+          'react-icons': ['react-icons'],
+        },
+      },
+    },
+  },
 
   resolve: {
     alias: {
