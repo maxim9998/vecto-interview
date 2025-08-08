@@ -1,1 +1,18 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-snow: #f1f1f1;
+  --color-blue-light: #2024df;
+  --color-blue-dark: #061885;
+  --color-grey-light: #3b486d;
+  --color-grey-bg: #202020;
+  --color-grey-text: #87888b;
+}
+
+body {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

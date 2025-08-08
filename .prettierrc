@@ -1,5 +1,5 @@
 {
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 150,
@@ -11,18 +11,14 @@
     "^react-dom$",
     "^react-.*",
     "<THIRD_PARTY_MODULES>",
-    "^@/components/(.*)$",
-    "^@/utils/(.*)$",
+    "^@/shared/(.*)$",
     "^@/assets/(.*)$",
-    "^@/routes/(.*)$",
+    "^@/app/(.*)$",
     "^[./]",
     ".*\\.(scss|css)$"
   ],
   "endOfLine": "auto",
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "plugins": [
-    "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
-  ]
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
