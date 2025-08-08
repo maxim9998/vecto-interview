@@ -14,7 +14,7 @@ const MovieCard = ({ imageUrl, movieId }: IMovieCard) => {
   const onCardClick = useDebounce({ fn: () => dispatch(onSelectFeaturedMovie({ id: movieId })), ms: 2000 });
 
   return (
-    <button className="h-full" onClick={onCardClick}>
+    <button className="h-full cursor-pointer" onClick={onCardClick}>
       <div className={'h-74 w-50 bg-cover bg-center bg-no-repeat'} style={{ backgroundImage: `url(${imageUrl})` }} />
     </button>
   );

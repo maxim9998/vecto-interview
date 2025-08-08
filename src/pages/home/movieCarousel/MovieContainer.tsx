@@ -24,6 +24,7 @@ const MovieContainer = () => {
   const onMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !containerRef.current) return;
     e.preventDefault();
+    e.stopPropagation();
     const x = e.pageX - containerRef.current.offsetLeft;
     const walk = (x - startX) * 0.8;
     containerRef.current.scrollLeft = scrollLeft - walk;
